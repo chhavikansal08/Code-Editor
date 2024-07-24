@@ -69,7 +69,50 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Code-editor
+
 =======
-# Code-Pen
->>>>>>> f13477a86c35f7c154b78a7f95780783b6ce4e60
+>>>>>>
+# Code Editor App
+This is a React-based code editor application that allows you to write, edit, and preview HTML, CSS, and JavaScript code in real-time. It utilizes CodeMirror for the editor component and stores the code using localStorage to retain your changes even after refreshing the page.
+
+# Features
+#Simultaneous Editing: Write HTML, CSS, and JavaScript code side by side.
+Real-Time Preview: View the output of your code in an iframe that updates every 250 milliseconds.
+Syntax Highlighting: Enhanced code readability with syntax highlighting for HTML, CSS, and JavaScript.
+Line Wrapping: Prevents horizontal scrolling by wrapping long lines of code.
+Linting: Provides real-time feedback on syntax errors and potential issues.
+Collapsible Editors: Toggle the visibility of each editor pane for better focus.
+Persistent Storage: Automatically saves your code to localStorage and loads it when you return.
+
+# Editing and Previewing Code
+Write your HTML code in the HTML editor.
+Style your HTML using the CSS editor.
+Add interactivity using the JS editor.
+The preview pane will update in real-time to reflect your changes.
+# Collapsible Editors
+Each editor has a toggle button to expand or collapse the pane.
+Use these buttons to focus on a specific part of your code when needed.
+# Persistent Storage
+Your code is automatically saved to localStorage with the keys codepen-clone-html, codepen-clone-css, and codepen-clone-js.
+When you revisit the application, your code will be loaded from localStorage.
+# Code Overview
+# App Component
+The App component manages the state for the HTML, CSS, and JavaScript code, and updates the preview pane using an iframe.
+
+# Editor Component
+The Editor component uses CodeMirror to provide an advanced code editing experience.
+
+# useLocalStorage Hook
+The useLocalStorage hook simplifies state management by storing and retrieving state from localStorage.
+
+# Styles
+Basic styling for the application, including the layout of the editor panes and the preview pane.
+
+# Options Explained
+# CodeMirror Options
+lineWrapping: Enables word wrapping to prevent horizontal scrolling.
+lint: Enables linting to provide real-time feedback on syntax errors and potential issues.
+mode: Sets the syntax highlighting mode for the respective language (HTML, CSS, JavaScript).
+theme: Sets the theme of the editor (using 'material' theme for a consistent look).
+lineNumbers: Displays line numbers for easier navigation and reference.
+
