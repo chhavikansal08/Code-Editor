@@ -1,134 +1,103 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 💻 Code Editor App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React-based code editor application** that lets you **write, edit, and preview HTML, CSS, and JavaScript code in real-time**.  
+Built with **CodeMirror** for an enhanced editing experience, it also leverages **localStorage** to persist your work even after refreshing the page.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🖊️ **Simultaneous Editing** → Write HTML, CSS, and JavaScript code side by side
+- ⚡ **Real-Time Preview** → Updates live in an iframe every 250ms
+- 🎨 **Syntax Highlighting** → Improved readability for HTML, CSS, and JavaScript
+- ↔️ **Line Wrapping** → Prevents horizontal scrolling with auto line breaks
+- ✅ **Linting** → Real-time feedback on syntax errors and issues
+- 📂 **Collapsible Editors** → Focus on a specific editor by toggling panes
+- 💾 **Persistent Storage** → Saves code automatically to `localStorage`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- ⚛️ **React** — Frontend framework
+- 📝 **CodeMirror** — Code editor component
+- 🗄️ **localStorage** — Persistent storage for code
+- 🎨 **CSS** — Styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js 16+
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/chhavikansal08/Code-Editor.git
+cd Code-Editor
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
 
-### `npm run eject`
+### 3️⃣ Start the development server
+```bash
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🖥️ Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Enter your HTML, CSS, and JavaScript code in their respective editors
+2. View the live **preview pane** (updates automatically every 250ms)
+3. Toggle editor panes to focus on a specific section
+4. Your code is **saved automatically** in `localStorage` and restored on reload
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Key Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **App Component** → Manages state for HTML, CSS, and JS, updates the preview iframe
+- **Editor Component** → Uses **CodeMirror** for syntax highlighting, linting, and editing features
+- **useLocalStorage Hook** → Stores and retrieves code from browser `localStorage`
+- **Styles** → Defines layout for editor panes and preview window
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues, and feature requests are welcome! Feel free to:
 
-### Making a Progressive Web App
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ⭐ Acknowledgments
 
-### Deployment
+- Built with ❤️ using **React + CodeMirror**
+- Inspired by **CodePen/JSFiddle** style editors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🔗 Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[View Live Demo](https://my-react-project-rwf1.vercel.app/) 
 
-=======
->>>>>>
-# Code Editor App
-This is a React-based code editor application that allows you to write, edit, and preview HTML, CSS, and JavaScript code in real-time. It utilizes CodeMirror for the editor component and stores the code using localStorage to retain your changes even after refreshing the page.
+---
 
-# Features
-#Simultaneous Editing: Write HTML, CSS, and JavaScript code side by side.
+## 📞 Support
 
-Real-Time Preview: View the output of your code in an iframe that updates every 250 milliseconds.
+If you like this project, please consider giving it a ⭐ on GitHub!
 
-Syntax Highlighting: Enhanced code readability with syntax highlighting for HTML, CSS, and JavaScript.
-
-Line Wrapping: Prevents horizontal scrolling by wrapping long lines of code.
-
-Linting: Provides real-time feedback on syntax errors and potential issues.
-
-Collapsible Editors: Toggle the visibility of each editor pane for better focus.
-
-Persistent Storage: Automatically saves your code to localStorage and loads it when you return.
-
-# Editing and Previewing Code
-Write your HTML code in the HTML editor.
-
-Style your HTML using the CSS editor.
-
-Add interactivity using the JS editor.
-
-The preview pane will update in real-time to reflect your changes.
-
-# Collapsible Editors
-Each editor has a toggle button to expand or collapse the pane.
-
-Use these buttons to focus on a specific part of your code when needed.
-# Persistent Storage
-Your code is automatically saved to localStorage with the keys codepen-clone-html, codepen-clone-css, and codepen-clone-js.
-
-When you revisit the application, your code will be loaded from localStorage.
-# Code Overview
-# App Component
-The App component manages the state for the HTML, CSS, and JavaScript code, and updates the preview pane using an iframe.
-
-# Editor Component
-The Editor component uses CodeMirror to provide an advanced code editing experience.
-
-# useLocalStorage Hook
-The useLocalStorage hook simplifies state management by storing and retrieving state from localStorage.
-
-# Styles
-Basic styling for the application, including the layout of the editor panes and the preview pane.
-
-# Options Explained
-# CodeMirror Options
-lineWrapping: Enables word wrapping to prevent horizontal scrolling.
-
-lint: Enables linting to provide real-time feedback on syntax errors and potential issues.
-
-mode: Sets the syntax highlighting mode for the respective language (HTML, CSS, JavaScript).
-
-theme: Sets the theme of the editor (using 'material' theme for a consistent look).
-
-lineNumbers: Displays line numbers for easier navigation and reference.
-
+For questions or support, please open an issue in the GitHub repository.
